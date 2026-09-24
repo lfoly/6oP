@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'tela_principal.dart';
+//import 'tela_principal.dart';
+//import 'tela2.dart';
+import 'tela3.dart';
 
 void main() {
   runApp(const App());
@@ -17,7 +19,9 @@ class App extends StatelessWidget {
         colorSchemeSeed: Colors.green, 
         appBarTheme: AppBarTheme(backgroundColor: Colors.amber,),
       ),
-      home: Principal(),
+      //home: Principal(),
+      //home: Tela2(),
+      home: Tela3(),
     );
   }
 }
