@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '1_tooltip.dart';
 
 void main() {
   runApp(const App());
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "Exemplo Mensagens",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: ThemeData(colorSchemeSeed: Colors.green),
       home: ExemploTooltip(),
     );
   }
