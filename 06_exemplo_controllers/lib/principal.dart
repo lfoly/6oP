@@ -11,8 +11,12 @@ class Principal extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            ElevatedButton(onPressed: () {}, child: Text("Cálculo Média")),
-            ElevatedButton(onPressed: () {}, child: Text("Créditos")),
+            ElevatedButton(onPressed: () {
+              Navigator.pushNamed(context, "/CalculoMedia");
+            }, child: Text("Cálculo Média")),
+            ElevatedButton(onPressed: () {
+              Navigator.pushNamed(context, "/Creditos");
+            }, child: Text("Créditos")),
           ],
           ),
         ),
