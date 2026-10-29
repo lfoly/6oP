@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'calculo_media.dart';
-import 'creditos.dart';
 import 'principal.dart';
 
 void main() {
@@ -15,9 +13,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "Exemplo List Crud",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorSchemeSeed: Colors.green,
-        ),
+      theme: ThemeData(colorSchemeSeed: Colors.green),
       home: const Principal(),
     );
   }

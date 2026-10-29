@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'contato_controller.dart';
+import 'contato.dart';
 
 class Formulario extends StatefulWidget {
   const new({super.key});
@@ -33,7 +35,17 @@ class _FormularioState extends State<Formulario> {
               controller: telefoneCtrl,
               decoration: const InputDecoration(labelText: 'Telefone'),              
               ),
-            ElevatedButton(onPressed: () {}, child: Text("Gravar")),
+            ElevatedButton(
+              onPressed: () {
+                  ContatoController.incluir(
+                      Contato(
+                        nome: nomeCtrl.text,
+                        email: emailCtrl.text,
+                        telefone: telefoneCtrl.text,
+                      ),
+                    );  
+                  Navigator.pop(context);              
+            }, child: Text("Gravar")),
           ],
         ),
       ),
