@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:material_ui/material_ui.dart';
 import 'listagem.dart';
@@ -11,7 +10,6 @@ class Inclusao extends StatelessWidget {
   final TextEditingController email = TextEditingController();
   final TextEditingController idade = TextEditingController();
 
-  @override
   void dispose() {
     nome.dispose();
     email.dispose();
